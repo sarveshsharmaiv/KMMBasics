@@ -1,0 +1,28 @@
+CREATE TABLE Template (
+    seoID INTEGER NOT NULL,
+    dimension TEXT NOT NULL,
+    categoryID INTEGER AS Int NOT NULL DEFAULT 1,
+    templateID INTEGER NOT NULL,
+    previewURL TEXT,
+    thumbnailURL TEXT,
+    websiteThumbnailURL TEXT,
+    defaultPreviewURL TEXT,
+    defaultThumbnailURL TEXT,
+    defaultWebsiteThumbnailURL TEXT
+);
+
+insertTemplates:
+INSERT INTO Template(seoID, dimension, categoryID, templateID, previewURL, thumbnailURL, websiteThumbnailURL, defaultPreviewURL, defaultThumbnailURL, defaultWebsiteThumbnailURL)
+VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+
+removeAllTemplates:
+DELETE FROM Template;
+
+selectTemplateById:
+SELECT * FROM Template
+WHERE templateID = ?;
+
+selectAllTemplates:
+SELECT *
+FROM Template;

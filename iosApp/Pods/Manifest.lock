@@ -1,0 +1,16 @@
+PODS:
+  - Cache (6.0.0)
+
+DEPENDENCIES:
+  - Cache
+
+SPEC REPOS:
+  trunk:
+    - Cache
+
+SPEC CHECKSUMS:
+  Cache: 4ca7e00363fca5455f26534e5607634c820ffc2d
+
+PODFILE CHECKSUM: 28f5092525b87a74edf7d0e08a1b45c3ec1c8cae
+
+COCOAPODS: 1.9.3
